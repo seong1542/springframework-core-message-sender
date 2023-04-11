@@ -11,12 +11,11 @@ public class EmailMessageSender implements MessageSender{
     public EmailMessageSender(){//객체 생성하고 postbefore하고 init, postafter
         System.out.println("email");
     }
-
-    public void init(){
-        System.out.println("-------init");
+    public void init() {
+        System.out.println(this.getClass().getCanonicalName()+ ": init!!");
     }
 
-    public void destroy(){
-        System.out.println("destroy method called in EmailMessageSender");
+    public void cleanup() {
+        System.out.println(this.getClass().getCanonicalName()+ ": cleanup!!");
     }
 }

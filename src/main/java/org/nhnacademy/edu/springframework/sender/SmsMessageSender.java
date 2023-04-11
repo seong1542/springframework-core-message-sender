@@ -10,10 +10,11 @@ public class SmsMessageSender implements MessageSender{
     public SmsMessageSender(){ // 객체생성후 post, init postAfter
         System.out.println("sms생성자");
     }
-    public void destroy(){
-        System.out.println("destroy method called in SmsMessageSender");
+    public void init() {
+        System.out.println(this.getClass().getCanonicalName()+ ": init!!");
     }
-    public void init(){
-        System.out.println("smsInit");
+
+    public void cleanup() {
+        System.out.println(this.getClass().getCanonicalName()+ ": cleanup!!");
     }
 }

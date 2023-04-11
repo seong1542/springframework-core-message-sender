@@ -9,5 +9,7 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("org.nhnacademy.edu.springframework");
         context.getBean("messageSendService", MessageSendService.class).doSendMessage();
 
+        context.close();
+
     }
 }
