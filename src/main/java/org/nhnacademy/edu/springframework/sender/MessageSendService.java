@@ -29,7 +29,7 @@ public class MessageSendService {
 
     public void doSendMessage(){
         User user = new User("seong1542@gmail.com", "01088590543");
-        messageSender.sendMessage(user,"sms");
+        messageSender.sendMessage(user,"asdlkfjaldkjfalsdjf");
 
     }
 }
