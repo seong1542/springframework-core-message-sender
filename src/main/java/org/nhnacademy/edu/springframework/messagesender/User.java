@@ -1,5 +1,7 @@
 package org.nhnacademy.edu.springframework.messagesender;
 
+import org.springframework.stereotype.Component;
+
 public class User {
     protected final String email;
     protected final String phoneNumber;
@@ -14,5 +16,9 @@ public class User {
     }
     public String getPhoneNumber(){
         return phoneNumber;
+    }
+    @Override
+    public String toString(){
+        return "{"+getEmail()+"-"+getPhoneNumber()+"}";
     }
 }
